@@ -1,3 +1,44 @@
 .App {
   text-align: center;
 }
+
+.navigation {
+  background-color: #000638;
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+  
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 11px 0;
+      list-style: none;
+      display: inline-block;
+
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 2px;
+        padding-top: 2px;
+
+        &[class^='active'] {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+}
+
+.footerBar {
+  margin-top: 20px;
+  height: 30px;
+  background-color: #000638;
+}
+
+.copyright {
+  color: white;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}

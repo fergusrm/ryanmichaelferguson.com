@@ -9,10 +9,12 @@ class Home extends React.Component {
     return (
       <div className="App">
         <main className="App-header">
-          <section class={styles.bio}>
+          <section className={styles.photo}>
             <div>
-              <img class={styles.myPhoto} src={photo} alt="" />
+              <img className={styles.myPhoto} src={photo} alt="" />
             </div>
+          </section>
+          <section className={styles.bio}>
             <p>
               Hi! My name is Ryan Ferguson, and I'm a software engineer
               currently living and working in Boulder, Colorado.
@@ -34,7 +36,7 @@ class Home extends React.Component {
             </p>
             <p>For more information, see my resume:</p>
             <a
-              class={[styles.resumeLink, styles.linkButton].join(" ")}
+              className={[styles.resumeLink, styles.linkButton].join(" ")}
               href={Resume}
             >
               Resume
@@ -45,17 +47,23 @@ class Home extends React.Component {
               using React. To see the source code, check out my GitHub account.
               Thanks!
             </p>
-            <div class={styles.linkContainer}>
+            <div className={styles.linkContainer}>
               <a
-                class={styles.linkButton}
+                className={styles.linkButton}
                 href="https://www.linkedin.com/in/ryan-ferguson-55518977/"
               >
                 LinkedIn
               </a>
-              <a class={styles.linkButton} href="mailto:ryanmferguson@pm.me">
+              <a
+                className={styles.linkButton}
+                href="mailto:ryanmferguson@pm.me"
+              >
                 Send Email
               </a>
-              <a class={styles.linkButton} href="https://github.com/fergusrm">
+              <a
+                className={styles.linkButton}
+                href="https://github.com/fergusrm"
+              >
                 GitHub
               </a>
             </div>

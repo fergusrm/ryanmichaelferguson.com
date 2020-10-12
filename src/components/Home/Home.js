@@ -6,10 +6,6 @@ import photo from "../../assets/images/moraine-lake-edited.jpg";
 
 class Home extends React.Component {
 
-  componentDidMount() {
-    document.title = "Ryan Ferguson";
-  }
-
   render() {
     return (
       <div className="App">
@@ -40,12 +36,13 @@ class Home extends React.Component {
               web apps using .NET (C#).
             </p>
             <p>For more information, see my resume:</p>
-            <a
-              className={[styles.resumeLink, styles.linkButton].join(" ")}
-              href={Resume}
-            >
-              Resume
-            </a>
+            <div className={styles.resumeLinkContainer}>
+              <a
+                className={[styles.resumeLink, styles.linkButton].join(" ")}
+                href={Resume}
+              >Resume</a>
+            </div>
+            
             <p>
               To connect with me via LinkedIn or send me an email use the links
               below. This website was built to be responsive and accessible

@@ -5,6 +5,11 @@ import styles from "./Home.module.scss";
 import photo from "../../assets/images/moraine-lake-edited.jpg";
 
 class Home extends React.Component {
+
+  componentDidMount() {
+    document.title = "Ryan Ferguson";
+  }
+
   render() {
     return (
       <div className="App">

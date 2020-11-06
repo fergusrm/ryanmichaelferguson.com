@@ -12,11 +12,16 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0"
   },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "jest-axe": "^4.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "aws s3 cp build/ s3://ryanmichaelferguson.com --recursive",
     "test": "react-scripts test",
+    "test:nowatch": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,7 +39,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "jest-axe": "^4.1.0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:nowatch"
+    }
   }
 }

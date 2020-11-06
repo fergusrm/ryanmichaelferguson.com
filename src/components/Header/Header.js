@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import Resume from '../../assets/resume/ferguson_resume.pdf';
 import styles from './Header.module.scss';
-var teststring = 'hello';
+
 function Header() {
   return (
     <nav className={styles.navigation}>

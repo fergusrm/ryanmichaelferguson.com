@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.navigation {
+  background-color: $header-footer-background;
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 11px 0;
+      list-style: none;
+      display: inline-block;
+
+      a {
+        display: block;
+        color: $header-footer-text;
+        text-decoration: none;
+        padding-bottom: 2px;
+        padding-top: 2px;
+      }
+
+      :global(a.active) {
+        border-bottom: 2px solid $header-footer-text;
+      }
+    }
+  }
+}

@@ -4,3 +4,19 @@ $min-width-sm: 576px;
 $min-width-md: 768px;
 $min-width-lg: 992px;
 $min-width-xl: 1200px;
+
+// Global colors
+$main-background: white;
+$main-text: black;
+
+$primary-color: #000638;
+$secondary-color: #0b1cd4;
+
+$header-footer-background: $primary-color;
+$header-footer-text: white;
+$link-button-background: $secondary-color;
+$link-button-hover-focus-background: $primary-color;
+$link-button-text: white;
+
+// Global styles
+$photo-border: 1px solid #ccc;

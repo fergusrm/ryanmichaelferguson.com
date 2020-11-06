@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main className={styles.mainContent}>
+      <main className={styles.mainContent} data-testid="main-content">
         <Switch>
           <Route exact path="/" component={Home}></Route>
         </Switch>

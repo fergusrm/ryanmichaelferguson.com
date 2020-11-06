@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "aws s3 cp build/ s3://ryanmichaelferguson.com --recursive",
+    "deploy": "npm run build && aws s3 cp build/ s3://ryanmichaelferguson.com --recursive",
     "lint": "eslint src/**/*.{jsx,js}",
     "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "test": "react-scripts test",

@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import styles from "./App.module.scss";
 
 function App() {
+  var test = {hello: "workd"}
   return (
       <BrowserRouter>
         <Header />
